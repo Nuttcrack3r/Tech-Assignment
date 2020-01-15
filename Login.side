@@ -1,0 +1,116 @@
+{
+  "id": "f468e88c-146f-44b1-8122-5fc40f954511",
+  "version": "2.0",
+  "name": "Login",
+  "url": "https://login.vixen.com",
+  "tests": [{
+    "id": "6b42da11-4985-4b2a-89fd-6da426cb324a",
+    "name": "TR_L_23",
+    "commands": [{
+      "id": "37439162-2c64-4adf-a77c-aa3499d78ff1",
+      "comment": "",
+      "command": "open",
+      "target": "/i/tushyraw/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53e6f08e-77ec-4390-8c6e-6c8cc84acf98",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4d87001-cab2-4cf0-bd73-87dc8c5b010d",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "pawlak.damian.91@gmail.com"
+    }, {
+      "id": "5e3e9109-bad0-479b-9246-256e8a42c552",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed7be397-1392-4315-abf8-4300004ad846",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "TestPassword91!"
+    }, {
+      "id": "99bb9f52-5c27-4e32-aa3f-8d0632f9d1c4",
+      "comment": "",
+      "command": "click",
+      "target": "name=action",
+      "targets": [
+        ["name=action", "name"],
+        ["css=.g-recaptcha", "css:finder"],
+        ["xpath=//button[@name='action']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4f603ae-01f4-4727-a88e-851d89759155",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.message",
+      "targets": [
+        ["css=.message", "css:finder"],
+        ["xpath=//div[@id='login']/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Invalid username or password')]", "xpath:innerText"]
+      ],
+      "value": "Invalid username or password"
+    }, {
+      "id": "2c6ea5f1-3a1a-4e26-944a-7b43cd0d58e8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9b9974f6-0ac8-4573-86ad-6f8b10e9e2d6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6b42da11-4985-4b2a-89fd-6da426cb324a"]
+  }],
+  "urls": ["https://login.vixen.com/"],
+  "plugins": []
+}

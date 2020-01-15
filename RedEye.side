@@ -1,0 +1,125 @@
+{
+  "id": "1a170fee-3b97-49f4-92fa-d6d3e5a487d1",
+  "version": "2.0",
+  "name": "RedEye",
+  "url": "https://www.tushyraw.com/red-eye",
+  "tests": [{
+    "id": "152c870f-f6b2-45a4-8386-7d89010b182e",
+    "name": "TR_RE_15",
+    "commands": [{
+      "id": "6af2f5dc-c687-406e-bbb3-5a9ae2a91bee",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.tushyraw.com/red-eye",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9040f4bb-8327-4cd4-b11e-f14fdde001ac",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sc-1m0b17d-20",
+      "targets": [
+        ["css=.sc-1m0b17d-20", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div[2]/div/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/span", "xpath:position"]
+      ],
+      "value": "DIRECTED BY:"
+    }, {
+      "id": "bf982fb9-3d68-46e0-b603-4037188a1b53",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sc-1m0b17d-10",
+      "targets": [
+        ["css=.sc-1m0b17d-10", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div[2]/div/div/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Derek Dozer')]", "xpath:innerText"]
+      ],
+      "value": "Derek Dozer"
+    }, {
+      "id": "9420014d-4b9f-44a9-8b41-5ad6af2b9bdc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sc-1m0b17d-23",
+      "targets": [
+        ["css=.sc-1m0b17d-23", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div[2]/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/p", "xpath:position"]
+      ],
+      "value": "Voluptuous Angela loves to flaunt her fabulous assets as she basks in the evening city lights. Her night takes her to a place of sexual tension, excitement and satisfaction that is second to none."
+    }, {
+      "id": "766ab0ce-3661-4b6d-91ab-7bc3df778af1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mrfi1b-10",
+      "targets": [
+        ["css=.mrfi1b-10", "css:finder"],
+        ["xpath=//div[@id='root']/footer/div[2]/small", "xpath:idRelative"],
+        ["xpath=//small", "xpath:position"]
+      ],
+      "value": "© 2014-2020 TUSHYRAW.com. All rights Reserved.\\nAll models appearing on this website are 18 years or older.\\nAll video, images, design, graphics are copyright.\\nFor billing inquiries or to cancel your membership, please visit\\nEPOCH, SEGPAY, VXNBILL, CCBILL, CENTROBILL or ECHST, our authorized sales agents.\\n18 U.S.C. § 2257 Record-Keeping Requirements Compliance Statement."
+    }]
+  }, {
+    "id": "f3ed72d0-0706-4213-b3f0-ad2776f7f896",
+    "name": "TR_RE_22",
+    "commands": [{
+      "id": "f8a0f64d-4e72-4465-8e8f-e61efb3368aa",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.tushyraw.com/red-eye",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9afa167-09d7-46ae-b569-91a89fefb2f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-13rgbhb-1 use",
+      "targets": [
+        ["css=.sc-13rgbhb-1 use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "850fd0c0-3d7c-4025-90e8-57f8b8b484fe",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.vjs-resolution-button",
+      "targets": [
+        ["css=.vjs-resolution-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='vjs_video_3']/div[4]/div[9]/button", "xpath:idRelative"],
+        ["xpath=//div[9]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Quality')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9acb6126-4fb8-46f3-aa97-ec9532ff91c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-menu-item:nth-child(4)",
+      "targets": [
+        ["css=.vjs-menu-item:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='vjs_video_3']/div[4]/div[9]/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div[9]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'720p')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d8e73bd-a404-4859-abd5-e03a88e6cbf0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=video.vjs-tech[src^='https://stnt-trailer-tushyraw.ssl-cdn.com/100895/1543412422314/TUSHY_RAW_100895_480P.mp4?']",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "97c12f31-f4c4-42b8-99ba-7343f4844c22",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["152c870f-f6b2-45a4-8386-7d89010b182e"]
+  }],
+  "urls": ["https://www.tushyraw.com/red-eye"],
+  "plugins": []
+}
